@@ -1,0 +1,51 @@
+---
+title: "Practical 1 Exercises"
+author: "Jacqueline Yang"
+---
+
+Exercise - using functions
+```{r}
+#Rounding 3.14159 to the nearest whole number
+round(3.14159)
+```
+
+Exercise - Argument order
+```{r}
+#Arguments in order
+print(rep(5, 7))
+
+#Names
+print(rep(x = 5, times = 7))
+```
+
+Exercise - Character, numerical and logical variables
+```{r}
+#Character
+a <- "Jacqueline"
+
+#Numeric
+b <- 7
+
+#Logical
+c <- TRUE
+
+print(class(a))
+print(class(b))
+print(class(c))
+```
+
+Exercise - Using variables of different types
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
