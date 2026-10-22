@@ -1,0 +1,27 @@
+---
+title: "hpa_quarto"
+author: "Jacqueline Yang"
+---
+
+I have data for gene numbers in the brains of humans, pigs and mice.
+
+I will calculate the total number of genes with regionally elevated expression in the **forebrain** - cerebral cortex, basal ganglia, thalamus and hypothalamus - regions in human, pig and mouse.
+
+The relevant data in humans is as follows: 180 in cerebral cortex, 83 in basal ganglia, 57 in thalamus, 110 in hypothalamus.
+
+The relevant data in pigs is as follows: 109 in cerebral cortex, 157 in basal ganglia, 31 in thalamus, 45 in hypothalamus.
+
+The relevant data in mice is as follows: 55 in cerebral cortex, 185 in basal ganglia, 60 in thalamus, 98 in hypothalamus.
+
+```{r}
+total_human_forebrain <- sum(180, 83, 57, 110)
+print(paste("Total number of genes with regionally elevated expression in humans:", total_human_forebrain))
+
+total_pig_forebrain <- sum(109, 157, 31, 45)
+print(paste("Total number of genes with regionally elevated expression in pigs:", total_pig_forebrain))
+
+total_mouse_forebrain <- sum(55, 185, 60, 98)
+print(paste("Total number of genes with regionally elevated expression in mice:", total_mouse_forebrain))
+```
+
+The highest number of genes with elevated expression was 430, in humans.
