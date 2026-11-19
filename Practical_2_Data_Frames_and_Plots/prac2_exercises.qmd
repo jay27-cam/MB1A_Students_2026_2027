@@ -1,0 +1,25 @@
+---
+title: "prac2_exercises"
+editor: visual
+---
+
+Exercise - Using the pipe operator
+
+```{r}
+input_vec <- c(5, -10, 4, -3)
+
+print(input_vec |>
+        mean() |>
+        abs() |>
+        round())
+```
+
+Exercise - Making comparison
+
+```{r}
+y <- 12
+print(y == 7)
+print(y > 15)
+print(y < 20)
+print(y <= 12)
+```
