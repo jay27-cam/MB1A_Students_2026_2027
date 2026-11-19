@@ -3,6 +3,9 @@ title: "Practical 1 Exercises"
 author: "Jacqueline Yang"
 ---
 
+library(tidyverse)
+library(gt)
+
 Exercise - using functions
 ```{r}
 #Rounding 3.14159 to the nearest whole number
@@ -47,5 +50,29 @@ num_cells_before_2 <- 8123
 
 num_cells_after_1 <- 1432
 num_cells_after_2 <- 7543
+
+cell_id <- c(cell_id_1, cell_id_2)
+treated <- c(treated_1, treated_2)
+num_cells_before <- c(num_cells_before_1, num_cells_before_2)
+num_cells_after <- c(num_cells_after_1, num_cells_after_2)
 ```
+
+Exercise - Indexing
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+print(all_my_pets[4])
+```
+
+Exercise - Creating a data frame
+```{r}
+my_data_frame <- tibble(
+    cellID = cell_id,
+    treated_ones = treated,
+    num_cells_b = num_cells_before,
+    num_cells_a = num_cells_after
+)
+
+gt(my_data_frame)
+```
+
 
